@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/peak/s5cmd/op"
-	"github.com/peak/s5cmd/opt"
+	"github.com/PiranhaTeam/s5cmd/op"
+	"github.com/PiranhaTeam/s5cmd/opt"
 )
 
 // CommandMap describes each command

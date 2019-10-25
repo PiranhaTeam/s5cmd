@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/peak/s5cmd/opt"
-	"github.com/peak/s5cmd/stats"
-	"github.com/peak/s5cmd/url"
+	"github.com/PiranhaTeam/s5cmd/opt"
+	"github.com/PiranhaTeam/s5cmd/stats"
+	"github.com/PiranhaTeam/s5cmd/url"
 )
 
 var (

@@ -9,10 +9,10 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/PiranhaTeam/s5cmd/url"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/peak/s5cmd/url"
 )
 
 var (

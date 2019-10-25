@@ -14,13 +14,13 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/PiranhaTeam/s5cmd/op"
+	"github.com/PiranhaTeam/s5cmd/opt"
+	"github.com/PiranhaTeam/s5cmd/stats"
+	"github.com/PiranhaTeam/s5cmd/url"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
-	"github.com/peak/s5cmd/op"
-	"github.com/peak/s5cmd/opt"
-	"github.com/peak/s5cmd/stats"
-	"github.com/peak/s5cmd/url"
 	"github.com/termie/go-shutil"
 )
 

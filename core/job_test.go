@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/peak/s5cmd/op"
-	"github.com/peak/s5cmd/opt"
-	"github.com/peak/s5cmd/stats"
+	"github.com/PiranhaTeam/s5cmd/op"
+	"github.com/PiranhaTeam/s5cmd/opt"
+	"github.com/PiranhaTeam/s5cmd/stats"
 )
 
 func newJob(sourceDesc, command string, operation op.Operation, args []*JobArgument, opts opt.OptionList) Job {

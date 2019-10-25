@@ -9,8 +9,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/peak/s5cmd/opt"
-	"github.com/peak/s5cmd/url"
+	"github.com/PiranhaTeam/s5cmd/opt"
+	"github.com/PiranhaTeam/s5cmd/url"
 )
 
 const (

@@ -2,6 +2,7 @@
 
 
 [[projects]]
+  digest = "1:daaca4d5e723d98a3f16fbf981970c18c9806b7f7b6aa632b8a45d429b7bbacb"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -30,82 +31,152 @@
     "service/s3",
     "service/s3/s3iface",
     "service/s3/s3manager",
-    "service/sts"
+    "service/sts",
   ]
+  pruneopts = "NUT"
   revision = "788eb15477cf129a45d8e1d0af5f533348f4125d"
   version = "v1.12.78"
 
 [[projects]]
+  digest = "1:063db6a0b87d39e99b3102a293cf675c23bb82074acea0a3e9276b3331216c2a"
   name = "github.com/cenkalti/backoff"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "61153c768f31ee5f130071d08fc82b85208528de"
   version = "v1.1.0"
 
 [[projects]]
+  digest = "1:0c0eac431b07bd0da31ef684aa15b5b5eeeda8a820f666e6523d2bfb8ce868c4"
   name = "github.com/go-ini/ini"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "32e4c1e6bc4e7d0d8451aa6b75200d19e37a536a"
   version = "v1.32.0"
 
 [[projects]]
+  digest = "1:ce0aef9c0fe339653379ee51ace3b1a11e191a9f8e3a2793c03ebe449d62db96"
   name = "github.com/google/gops"
   packages = [
     "agent",
     "internal",
-    "signal"
+    "signal",
   ]
+  pruneopts = "NUT"
   revision = "57e77c5c37da1f4e1af49f9d1fe760f146c1579e"
   version = "v0.3.2"
 
 [[projects]]
   branch = "master"
+  digest = "1:f0d9d74edbd40fdeada436d5ac9cb5197407899af3fef85ff0137077ffe8ae19"
   name = "github.com/hashicorp/errwrap"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "7554cd9344cec97297fa6649b055a8c98c2a1e55"
 
 [[projects]]
   branch = "master"
+  digest = "1:4d55897d00e9b53c1c716e8fe504de3d21bec8edba0a330bfaa87902695e46e2"
   name = "github.com/hashicorp/go-multierror"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "b7773ae218740a7be65057fc60b366a49b538a44"
 
 [[projects]]
+  digest = "1:ac6d01547ec4f7f673311b4663909269bfb8249952de3279799289467837c3cc"
   name = "github.com/jmespath/go-jmespath"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "0b12d6b5"
 
 [[projects]]
   branch = "master"
+  digest = "1:263f9b0a0bcbfff9d5e7d9f2aa11f53995d98214fe0fb97e429e7a5f4534a0f9"
   name = "github.com/kardianos/osext"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "ae77be60afb1dcacde03767a8c37337fad28ac14"
 
 [[projects]]
+  digest = "1:7f7c55744b29e3ae479344ff1b9eca019c2aa442f93ead8555e99c3c29c463a9"
+  name = "github.com/PiranhaTeam/s5cmd"
+  packages = [
+    "complete",
+    "core",
+    "op",
+    "opt",
+    "stats",
+    "url",
+    "version",
+  ]
+  pruneopts = "NUT"
+  revision = "4d9293fd645024357a59d045f590eb241391d44d"
+  version = "v0.6.0"
+
+[[projects]]
+  digest = "1:33784e0588930daabbed8caafe3eae8b4ef1f7eb98aae15a8528c0a3f4ff0ebb"
+  name = "github.com/peakgames/s5cmd"
+  packages = [
+    "core",
+    "op",
+    "opt",
+    "stats",
+    "url",
+  ]
+  pruneopts = "NUT"
+  revision = "4d9293fd645024357a59d045f590eb241391d44d"
+  version = "v0.6.0"
+
+[[projects]]
+  digest = "1:5652b013ebd03c58e33b5187623cb9268b0a1319879086dbfd78e6efc6bb53c6"
   name = "github.com/posener/complete"
   packages = [
     ".",
     "cmd",
     "cmd/install",
-    "match"
+    "match",
   ]
+  pruneopts = "NUT"
   revision = "dc2bc5a81accba8782bebea28628224643a8286a"
   version = "v1.1"
 
 [[projects]]
   branch = "master"
+  digest = "1:61ff1d7ec6dd1d292b239427d48df86db690dba61046f7c01c0c43c94fe01e3e"
   name = "github.com/termie/go-shutil"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "bcacb06fecaeec8dc42af03c87c6949f4a05c74c"
 
 [[projects]]
   branch = "master"
+  digest = "1:76ee51c3f468493aff39dbacc401e8831fbb765104cbf613b89bef01cf4bad70"
   name = "golang.org/x/net"
   packages = ["context"]
+  pruneopts = "NUT"
   revision = "dc948dff8834a7fe1ca525f8d04e261c2b56e70d"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d1be307d7ffc6bb75537b37f83aa01c0bd58e8ed7aa0f205f04c4e4b55227a20"
+  input-imports = [
+    "github.com/aws/aws-sdk-go/aws",
+    "github.com/aws/aws-sdk-go/aws/awserr",
+    "github.com/aws/aws-sdk-go/aws/endpoints",
+    "github.com/aws/aws-sdk-go/aws/request",
+    "github.com/aws/aws-sdk-go/aws/session",
+    "github.com/aws/aws-sdk-go/service/s3",
+    "github.com/aws/aws-sdk-go/service/s3/s3manager",
+    "github.com/cenkalti/backoff",
+    "github.com/google/gops/agent",
+    "github.com/PiranhaTeam/s5cmd/complete",
+    "github.com/PiranhaTeam/s5cmd/core",
+    "github.com/PiranhaTeam/s5cmd/op",
+    "github.com/PiranhaTeam/s5cmd/opt",
+    "github.com/PiranhaTeam/s5cmd/stats",
+    "github.com/PiranhaTeam/s5cmd/url",
+    "github.com/PiranhaTeam/s5cmd/version",
+    "github.com/posener/complete",
+    "github.com/termie/go-shutil",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
